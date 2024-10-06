@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Services</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    /* Services Section */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 30px;
+    }
+
+    .service-box {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+      perspective: 1000px;
+    }
+
+    .service-box:hover {
+      transform: translateZ(20px) rotateX(10deg) rotateY(10deg);
+    }
+
+    .service-icon {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+    }
+
+    .service-icon svg {
+      width: 100%;
+      height: 100%;
+      animation: rotate-icon 10s infinite linear;
+    }
+
+    @keyframes rotate-icon {
+      0% {
+        transform: rotateX(0) rotateY(0);
+      }
+      100% {
+        transform: rotateX(360deg) rotateY(360deg);
+      }
+    }
+
+    .service-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .service-description {
+      font-size: 16px;
+      color: #666;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .services {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+
+      .service-box {
+        padding: 20px;
+      }
+
+      .service-icon {
+        width: 60px;
+        height: 60px;
+      }
+
+      .service-title {
+        font-size: 18px;
+      }
+
+      .service-description {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 style="text-align: center; background: linear-gradient(to right, #007f00, #00c000); color: white; padding: 20px 0; font-size: 36px;">Web Development Services</h1>    <div class="services">
+      <div class="service-box">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 9L12 2L21 9V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V9Z" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9 21V13H15V21" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="service-title">Website Design</h3>
+        <p class="service-description">Crafting beautiful and user-friendly web designs that engage your audience.</p>
+      </div>
+
+      <div class="service-box">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 9V21" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20 9V21" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7 21H17C18.1046 21 19 20.1046 19 19V9C19 7.89543 18.1046 7 17 7H7C5.89543 7 5 7.89543 5 9V19C5 20.1046 5.89543 21 7 21Z" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 7V3" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="service-title">Web Development</h3>
+        <p class="service-description">Building responsive and scalable web applications that meet your business needs.</p>
+      </div>
+
+      <div class="service-box">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 16V12" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 8H12.01" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="service-title">E-commerce Solutions</h3>
+        <p class="service-description">Develop secure and feature-rich e-commerce platforms to grow your online business.</p>
+      </div>
+
+      <div class="service-box">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 16L16 12L12 8" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 12H16" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="service-title">Web Hosting</h3>
+        <p class="service-description">Reliable and secure hosting solutions to ensure your website is always available.</p>
+      </div>
+
+     
+      
+   
+  
+</body>
+</html>
